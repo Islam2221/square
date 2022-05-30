@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    animation: ring 5s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform: rotate(180deg);
+
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
